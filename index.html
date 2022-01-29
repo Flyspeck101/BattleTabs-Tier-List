@@ -27,8 +27,12 @@
     padding-top: 20px;
   }
 
-  .tier-list-item-2 {
-    margin: 5px calc(50vw - 80px);
+  .omega .tier-list-tier {
+    color: white;
+  }
+
+  .omega .tier-list-item img {
+    border: 10px solid white;
   }
 
   .s .tier-list-tier {
@@ -79,54 +83,6 @@
     border: 10px solid red;
   }
 
-  .s .tier-list-tier {
-    color: magenta;
-  }
-
-  .s .tier-list-item-2 img {
-    border: 10px solid magenta;
-  }
-
-  .a .tier-list-tier {
-    color: lime;
-  }
-
-  .a .tier-list-item-2 img {
-    border: 10px solid lime;
-  }
-  
-  .b .tier-list-tier {
-    color: green;
-  }
-
-  .b .tier-list-item-2 img {
-    border: 10px solid green;
-  }
-
-  .c .tier-list-tier {
-    color: yellow;
-  }
-
-  .c .tier-list-item-2 img {
-    border: 10px solid yellow;
-  }
-
-  .d .tier-list-tier {
-    color: orange;
-  }
-
-  .d .tier-list-item-2 img {
-    border: 10px solid orange;
-  }
-
-  .e .tier-list-tier {
-    color: red;
-  }
-
-  .e .tier-list-item-2 img {
-    border: 10px solid red;
-  }
-
   img {
     border-radius: 20px;
     margin: auto 0;
@@ -154,241 +110,63 @@
 </style>
 </head>
 <body>
-  <button id="toggle-mode">Tier list format: By tier</button>
   <div id="by-tier" class="tier-list-container">
-    <div class="tier-container s">
+    <div id="omega" class="tier-container omega">
+      <div class="tier-list-tier">Ω</div>
+      
+    </div>
+    <br>
+    <div id="s" class="tier-container s">
       <div class="tier-list-tier">S</div>
-      <div class="tier-list-item">
-        <img src="./ships/squad/portrait_squad.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/subsmall/portrait_subsmall.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/slug/portrait_slug.png" />
-      </div>
+      
     </div>
     <br>
-    <div class="tier-container a">
+    <div id="a" class="tier-container a">
       <div class="tier-list-tier">A</div>
-      <div class="tier-list-item">
-        <img src="./ships/cannoneer/portrait_cannoneer.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/longboat/portrait_longboat.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/coracle/portrait_coracle.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/piratethief/portrait_piratethief.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/sublarge/portrait_sublarge.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/galleonmedium/portrait_galleonmedium.png" />
-      </div>
-      <div></div>
-      <div class="tier-list-item">
-        <img src="./ships/electriceel/portrait_electriceel.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/crustacean/portrait_crustacean.png" />
-      </div>
+      
     </div>
     <br>
-    <div class="tier-container b">
+    <div id="b" class="tier-container b">
       <div class="tier-list-tier">B</div>
-      <div class="tier-list-item">
-        <img src="./ships/kayak/portrait_kayak.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/sailboat/portrait_sailboat.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/squid/portrait_squid.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/turtle/portrait_turtle.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/whale/portrait_whale.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/skullcove/portrait_skullcove.png" />
-      </div>
-      <div></div>
-      <div class="tier-list-item">
-        <img src="./ships/magicmirror/portrait_magicmirror.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/chaoticmachinist/portrait_chaoticmachinist.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/crab/portrait_crab.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/blunderbuster/portrait_blunderbuster.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/catamaran/portrait_catamaran.png" />
-      </div>
+      
     </div>
     <br>
-    <div class="tier-container c">
+    <div id="c" class="tier-container c">
       <div class="tier-list-tier">C</div>
-      <div class="tier-list-item">
-        <img src="./ships/raft/portrait_raft.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/cartographer/portrait_cartographer.png" />
-      </div>
+      
     </div>
     <br>
-    <div class="tier-container d">
+    <div id="d" class="tier-container d">
       <div class="tier-list-tier">D</div>
-      <div class="tier-list-item">
-        <img src="./ships/mutineers/portrait_mutineers.png" />
-      </div>
-      <div class="tier-list-item">
-        <img src="./ships/octopus/portrait_octopus.png" />
-      </div>
+      
     </div>
     <br>
-    <div class="tier-container e">
+    <div id="e" class="tier-container e">
       <div class="tier-list-tier">F</div>
-      <div class="tier-list-item">
-        <img src="./ships/seamonster/portrait_seamonster.png" />
-      </div>
-    </div>
-  </div>
-
-  <div id="by-rank" style="display: none">
-    
-    <div class="tier-container-2 s">
-      <div class="tier-list-tier">S</div>
-      <div class="tier-list-item-2">
-        <img src="./ships/squad/portrait_squad.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/subsmall/portrait_subsmall.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/slug/portrait_slug.png" />
-      </div>
-    </div>
-    <br>
-    <div class="tier-container-2 a">
-      <div class="tier-list-tier">A</div>
-      <div class="tier-list-item-2">
-        <img src="./ships/cannoneer/portrait_cannoneer.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/longboat/portrait_longboat.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/coracle/portrait_coracle.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/piratethief/portrait_piratethief.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/sublarge/portrait_sublarge.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/galleonmedium/portrait_galleonmedium.png" />
-      </div>
-      <div></div>
-      <div class="tier-list-item-2">
-        <img src="./ships/electriceel/portrait_electriceel.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/crustacean/portrait_crustacean.png" />
-      </div>
-    </div>
-    <br>
-    <div class="tier-container-2 b">
-      <div class="tier-list-tier">B</div>
-      <div class="tier-list-item-2">
-        <img src="./ships/kayak/portrait_kayak.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/sailboat/portrait_sailboat.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/squid/portrait_squid.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/turtle/portrait_turtle.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/whale/portrait_whale.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/skullcove/portrait_skullcove.png" />
-      </div>
-      <div></div>
-      <div class="tier-list-item-2">
-        <img src="./ships/magicmirror/portrait_magicmirror.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/chaoticmachinist/portrait_chaoticmachinist.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/crab/portrait_crab.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/blunderbuster/portrait_blunderbuster.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/catamaran/portrait_catamaran.png" />
-      </div>
-    </div>
-    <br>
-    <div class="tier-container-2 c">
-      <div class="tier-list-tier">C</div>
-      <div class="tier-list-item-2">
-        <img src="./ships/raft/portrait_raft.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/cartographer/portrait_cartographer.png" />
-      </div>
-    </div>
-    <br>
-    <div class="tier-container-2 d">
-      <div class="tier-list-tier">D</div>
-      <div class="tier-list-item-2">
-        <img src="./ships/mutineers/portrait_mutineers.png" />
-      </div>
-      <div class="tier-list-item-2">
-        <img src="./ships/octopus/portrait_octopus.png" />
-      </div>
-    </div>
-    <br>
-    <div class="tier-container-2 e">
-      <div class="tier-list-tier">F</div>
-      <div class="tier-list-item-2">
-        <img src="./ships/seamonster/portrait_seamonster.png" />
-      </div>
+      
     </div>
   </div>
   <script>
-    let modes = {"by-tier": "By tier", "by-rank": "Ranked"};
-    currentMode = "by-tier";
-    document.getElementById("toggle-mode").addEventListener("click", () => {
-      document.getElementById(currentMode).style.display = "none";
-      switch (currentMode) {
-        case "by-tier":
-          currentMode = "by-rank";
-          break;
-        case "by-rank":
-          currentMode = "by-tier";
-          break;
+    let tierList = {
+      "omega": ["subsmall", "slug", "squad"],
+      "s": ["longboat", "coracle", "cannoneer", "galleonmedium"],
+      "a": ["piratethief", "sublarge", "kayak", "electriceel", "crustacean", "magicmirror"],
+      "b": ["sailboat", "cartographer", "turtle", "squid", "whale", "raft", "blunderbuster", "chaoticmachinist"],
+      "c": ["skullcove", "crab", "catamaran"],
+      "d": ["octopus", "mutineers"],
+      "e": ["seamonster"]
+    };
+    for (tier in tierList) {
+      let DOMString = "";
+      for (var i = 0; i < tierList[tier].length; i++) {
+        if (i % 6 == 0 && i != 0) {
+          DOMString += "<br>";
+        }
+        DOMString += `<div class="tier-list-item"><img src="./ships/portrait_${tierList[tier][i]}.png" /></div>`;
       }
-      document.getElementById(currentMode).style.display = "block";
-      document.getElementById("toggle-mode").innerText = "Tier list format: " + modes[currentMode];
-    });
+      document.getElementById(tier).innerHTML += DOMString;
+    } 
+
   </script>
 </body>
 </html>
