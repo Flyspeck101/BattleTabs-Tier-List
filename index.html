@@ -38,6 +38,7 @@
   .s .tier-list-tier {
 	color: magenta;
 	text-align: center;
+  padding-top: 63.5px;
   }
 
   .s .tier-list-item img {
@@ -113,12 +114,11 @@
 <body>
   <div id="by-tier" class="tier-list-container">
     <div id="omega" class="tier-container omega">
-      <div class="tier-list-tier">Ω</div>
-      
+      <div class="tier-list-tier"><!-- Ω -->S</div>
     </div>
     <br>
     <div id="s" class="tier-container s">
-      <div class="tier-list-tier">S</div>
+      <div class="tier-list-tier" style="font-size: 87px;">A+</div>
       
     </div>
     <br>
@@ -149,12 +149,12 @@
   </div>
   <script>
     let tierList = {
-      "omega": ["subsmall", "slug", "squad"],
-      "s": ["longboat", "coracle", "cannoneer", "galleonmedium"],
-      "a": ["piratethief", "sublarge", "kayak", "electriceel", "crustacean", "magicmirror"],
-      "b": ["sailboat", "cartographer", "turtle", "squid", "whale", "raft", "blunderbuster", "chaoticmachinist"],
-      "c": ["skullcove", "crab", "catamaran"],
-      "d": ["octopus", "mutineers"],
+      "omega": ["subsmall", "squad"],
+      "s": ["longboat", "coracle", "cannoneer"],
+      "a": ["piratethief", "turtle", "sublarge", "galleonmedium", "electriceel", "crustacean"],
+      "b": ["kayak", "sailboat", "slug", "squid", "whale", "cartographer", "magicmirror", "blunderbuster", "chaoticmachinist", "catamaran"],
+      "c": ["crab", "raft", "skullcove"],
+      "d": ["mutineers", "octopus"],
       "e": ["seamonster"]
     };
     for (tier in tierList) {
