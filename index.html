@@ -1,174 +1,174 @@
 <html>
+
 <head>
-  <title>BattleTabs Tier List</title>
-  <style>
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  .tier-list-container {
-
-  }
-
-  .tier-container {
-    display: grid;
-    grid-template-columns: 170px 170px 170px 170px 170px 170px 170px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .tier-container .tier-list-item {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  .tier-container .tier-list-tier {
-    padding-top: 20px;
-  }
-
-  .omega .tier-list-tier {
-    color: white;
-  }
-
-  .omega .tier-list-item img {
-    border: 10px solid white;
-  }
-
-  .s .tier-list-tier {
-	color: magenta;
-	text-align: center;
-  padding-top: 63.5px;
-  }
-
-  .s .tier-list-item img {
-    border: 10px solid magenta;
-  }
-
-  .a .tier-list-tier {
-    color: lime;
-  }
-
-  .a .tier-list-item img {
-    border: 10px solid lime;
-  }
-  
-  .b .tier-list-tier {
-    color: green;
-  }
-
-  .b .tier-list-item img {
-    border: 10px solid green;
-  }
-
-  .c .tier-list-tier {
-    color: yellow;
-  }
-
-  .c .tier-list-item img {
-    border: 10px solid yellow;
-  }
-
-  .d .tier-list-tier {
-    color: orange;
-  }
-
-  .d .tier-list-item img {
-    border: 10px solid orange;
-  }
-
-  .e .tier-list-tier {
-    color: red;
-  }
-
-  .e .tier-list-item img {
-    border: 10px solid red;
-  }
-
-  img {
-    border-radius: 20px;
-    margin: auto 0;
-  }
-
-  .tier-list-tier {
-    font-size: 154px;
-    font-family: "Lucida Console";
-    padding: 10px;
-    text-align: center;
-  }
-
-  button {
-    margin: 0 calc(50vw - 130px);
-    text-align: center;
-    width: 250px;
-    height: 75px;
-    border: 10px solid cyan;
-    border-radius: 20px;
-    font-family: "Lucida Console";
-    background-color: black;
-    color: white;
-    font-size: 20px;
-  }
-  </style>
-</head>
-<body>
-  <div id="by-tier" class="tier-list-container">
-    <div id="omega" class="tier-container omega">
-      <div class="tier-list-tier"><!-- Ω -->S</div>
-    </div>
-    <br>
-    <div id="s" class="tier-container s">
-      <div class="tier-list-tier" style="font-size: 87px;">A+</div>
-      
-    </div>
-    <br>
-    <div id="a" class="tier-container a">
-      <div class="tier-list-tier">A</div>
-      
-    </div>
-    <br>
-    <div id="b" class="tier-container b">
-      <div class="tier-list-tier">B</div>
-      
-    </div>
-    <br>
-    <div id="c" class="tier-container c">
-      <div class="tier-list-tier">C</div>
-      
-    </div>
-    <br>
-    <div id="d" class="tier-container d">
-      <div class="tier-list-tier">D</div>
-      
-    </div>
-    <br>
-    <div id="e" class="tier-container e">
-      <div class="tier-list-tier">F</div>
-      
-    </div>
-  </div>
-  <script>
-    let tierList = {
-      "omega": ["subsmall", "squad"],
-      "s": ["longboat", "coracle", "cannoneer"],
-      "a": ["piratethief", "turtle", "sublarge", "galleonmedium", "electriceel", "crustacean"],
-      "b": ["kayak", "sailboat", "slug", "squid", "whale", "cartographer", "magicmirror", "blunderbuster", "chaoticmachinist", "catamaran"],
-      "c": ["crab", "raft", "skullcove"],
-      "d": ["mutineers", "octopus"],
-      "e": ["seamonster"]
-    };
-    for (tier in tierList) {
-      let DOMString = "";
-      for (var i = 0; i < tierList[tier].length; i++) {
-        if (i % 6 == 0 && i != 0) {
-          DOMString += "<br>";
+    <title>BattleTabs Tier List</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
         }
-        DOMString += `<div class="tier-list-item"><img src="./ships/portrait_${tierList[tier][i]}.png" /></div>`;
-      }
-      document.getElementById(tier).innerHTML += DOMString;
-    } 
+        
+        .tier-list-container {}
+        
+        .tier-container {
+            display: grid;
+            grid-template-columns: 170px 170px 170px 170px 170px 170px 170px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .tier-container .tier-list-item {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .tier-container .tier-list-tier {
+            padding-top: 20px;
+        }
+        
+        .omega .tier-list-tier {
+            color: white;
+        }
+        
+        .omega .tier-list-item img {
+            border: 10px solid white;
+        }
+        
+        .s .tier-list-tier {
+            color: magenta;
+            text-align: center;
+            padding-top: 63.5px;
+        }
+        
+        .s .tier-list-item img {
+            border: 10px solid magenta;
+        }
+        
+        .a .tier-list-tier {
+            color: lime;
+        }
+        
+        .a .tier-list-item img {
+            border: 10px solid lime;
+        }
+        
+        .b .tier-list-tier {
+            color: green;
+        }
+        
+        .b .tier-list-item img {
+            border: 10px solid green;
+        }
+        
+        .c .tier-list-tier {
+            color: yellow;
+        }
+        
+        .c .tier-list-item img {
+            border: 10px solid yellow;
+        }
+        
+        .d .tier-list-tier {
+            color: orange;
+        }
+        
+        .d .tier-list-item img {
+            border: 10px solid orange;
+        }
+        
+        .e .tier-list-tier {
+            color: red;
+        }
+        
+        .e .tier-list-item img {
+            border: 10px solid red;
+        }
+        
+        img {
+            border-radius: 20px;
+            margin: auto 0;
+        }
+        
+        .tier-list-tier {
+            font-size: 154px;
+            font-family: "Lucida Console";
+            padding: 10px;
+            text-align: center;
+        }
+        
+        button {
+            margin: 0 calc(50vw - 130px);
+            text-align: center;
+            width: 250px;
+            height: 75px;
+            border: 10px solid cyan;
+            border-radius: 20px;
+            font-family: "Lucida Console";
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
 
-  </script>
+<body>
+    <div id="by-tier" class="tier-list-container">
+        <div id="omega" class="tier-container omega">
+            <div class="tier-list-tier">
+                <!-- Ω -->S</div>
+        </div>
+        <br>
+        <div id="s" class="tier-container s">
+            <div class="tier-list-tier" style="font-size: 87px;">A+</div>
+
+        </div>
+        <br>
+        <div id="a" class="tier-container a">
+            <div class="tier-list-tier">A</div>
+
+        </div>
+        <br>
+        <div id="b" class="tier-container b">
+            <div class="tier-list-tier">B</div>
+
+        </div>
+        <br>
+        <div id="c" class="tier-container c">
+            <div class="tier-list-tier">C</div>
+
+        </div>
+        <br>
+        <div id="d" class="tier-container d">
+            <div class="tier-list-tier">D</div>
+
+        </div>
+        <br>
+        <div id="e" class="tier-container e">
+            <div class="tier-list-tier">F</div>
+
+        </div>
+    </div>
+    <script>
+        let tierList = {
+            "omega": ["subsmall"],
+            "s": ["longboat", "squad", "cannoneer", "chaosSlug"],
+            "a": ["blunderbuster", "coracle", "galleonmedium", "piratethief", "sublarge"],
+            "b": ["kayak", "crustacean", "catamaran", "magicmirror", "slug", "sailboat", "electriceel", "squid", "turtle", "whale"],
+            "c": ["cartographer", "crab", "chaoticmachinist", "raft", "skullcove"],
+            "d": ["mutineers", "octopus"],
+            "e": ["seamonster"]
+        };
+        for (tier in tierList) {
+            let DOMString = "";
+            for (var i = 0; i < tierList[tier].length; i++) {
+                if (i % 6 == 0 && i != 0) {
+                    DOMString += "<br>";
+                }
+                DOMString += `<div class="tier-list-item"><img src="./ships/portrait_${tierList[tier][i]}.png" /></div>`;
+            }
+            document.getElementById(tier).innerHTML += DOMString;
+        }
+    </script>
 </body>
-</html>
 
+</html>
